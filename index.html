@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title original="Tanel's porfolio"></title>
+    <link rel="icon" type="image/x-icon" href="T2.ico">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #language-selector {
+            position: absolute;
+            right: 10px;
+            z-index: 1;
+            display: flex;
+        }
+
+        .flag {
+            width: 3vw;
+            height: 2vw;
+            cursor: pointer;
+            margin-right: 1vw;
+           
+            align-self: center;
+        }
+
+        #flag-container {
+            display: flex;
+            align-items: center;
+        }
+
+        body {
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      position: fixed;
+      align-items: center;
+      top: 0;
+      width: 100%;
+      height: 7vh;
+      background-color: #f2f2f2;
+      
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    nav ul li {
+      float: left;
+      align-self: center;
+
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 1vw 1vw;
+      text-decoration: none;
+      color: #333;
+      font-size: 2vw;
+    }
+
+    .column-container {
+    column-count: 2; 
+    column-gap: 20px; 
+    }
+
+    .column {
+    break-inside: avoid; 
+    padding: 10px; 
+    }
+
+    section {
+  margin-top: 9vh;
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+    }
+    section h1{
+      font-size: 6vw;
+      line-height: 1em;
+      white-space: pre-line;
+    }
+    section p{
+      margin-top: 1vw;
+      font-size: 3vw;
+      line-height: 1em;
+      white-space: pre-line;
+    }
+
+
+    section:nth-child(odd) {
+      background-color: #f6f7ff;
+    }
+
+    section:nth-child(even) {
+      background-color: #fcfff6;
+    }
+
+    .skill{
+      padding: 1vw; 
+      margin: 2vw; 
+      background-color: #ffeaea; 
+      font-size: 3vw;
+  
+      border-radius: 1vw;
+      color: #666;
+      display: inline-block;
+    }
+    .skill a{
+      text-decoration: none;
+      color: #666;
+
+
+    }
+      body {
+    background-image:
+      linear-gradient(45deg, #000 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, #000 75%),
+      linear-gradient(45deg, transparent 75%, #000 75%),
+      linear-gradient(45deg, #000 25%, #fff 25%);    
+
+    background-size:1vh 1vh;       
+
+    background-position:0 0, 0 0, -50px -50px, 50px 50px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+    </style>
+</head>
+<body>
+  
+    <nav>
+        <ul>
+          <li><a href="#section1" original="About me"></a></li>
+          <li><a href="#section2" original ="Board games"></a></li>
+          <li><a href="#section3" original ="Data collections"></a></li>
+          <li><a href="#section4" original ="Presentations"></a></li>
+
+
+
+          <div id="language-selector">
+           <div id="flag-container">
+
+            <li> <a original="My languages"></a></li>
+              <img class="flag" src="eng.png" alt="Eng"  t_original="English" onclick="changeLanguage('en')">
+              <img class="flag" src="est.png" alt="Est"  t_original ="Estonian" onclick="changeLanguage('ee')">
+              <img class="flag" src="unlearn.png" alt="??" t_original ="I have also studyied Russian and Finnish, but I do not feel comfortable in them right now" >
+
+            </div>
+        </div>
+    
+        </ul>
+      </nav>
+
+    <section id="section1">
+    <h1 original ="About me"></h1>
+    <br>
+    <p original = "Hi!"></p>
+    <p original = "My name is Tanel (26)"></p>
+    <p original = "I have a Taltech degree in Cyber-Physical Systems Engineering"></p>
+    <p original = "I am looking for ways to develope as a software engineer.."></p>
+    <p original = "..To work with more meaningful tasks, and learn to write faster and more readable code"></p>
+
+
+
+    <h2 original ="Past projects"></h1>
+    <div class="column-container">
+      <div class="column">
+        <p original ="A common job interview question: describe yourself?"></p>
+          <p original ="So, the purpose of this page, is to describe my strengths and interests for a potential employer"></p>
+          <p original = "For that, here are listed few of my favourite school/hobby projects"></p>
+          <p original = "*Obivously I am also happy to learn new tools and technologies"></p>
+
+      </div>
+      <div class="column">
+          <p original = "Languages I have ever used"></p>
+
+          <div class="skill"> <a href ="#section3">C</a></div>
+          <div class="skill"> <a href ="#section2">JAVA</a></div>
+          <div class="skill"> <a href = "#section3">Python</a></div>
+          <div class="skill">VBA</div>
+          <div class="skill"> <a href ="#section4">PHP</a></div>
+          <div class="skill"> <a href ="#section4">Matlab</a></div>
+          <div class="skill">LUA</div>
+          <div class="skill">Pascal</div>
+          <div class="skill">NASM</div>
+
+      </div>
+  </div>
+  </section>
+
+  <section id="section2">
+    <h1 original ="Board games"></h1>
+    <div class="column-container">
+      <div class="column">
+        <h2 original ="Console"></h2>
+        <p original = "My first program in C: local checkers program with ASCII graphic"></p>
+        <p original = "Later, I have made several versions of classical chess in JAVA and Python"></p>
+        <p original = "But here, you can download an expandable version of tic-tac-toe, with variable time controls and AI opponents"></p>
+        <a href="https://github.com/tiisnel/tic-tac-toe" original = "<view-source>"></a>
+
+      </div>
+      <div class="column">
+        <h2 original = "Microcontrollers"></h2>
+        <p original = "I started with LUA based system, to program automated tasks for school classroom climate"></p>
+        <p original = "Then, switched my focus to fun projects like arduino based LED-cubes and VHDL simulations for traffic lights"></p>
+        <p original = "Also, I have tried to imlement simple piece recognition for board games"></p>
+        <p original = "My current dream is to create universal interface, that could connect with any physical game board(!) and to digitalize it"></p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="section3">
+    <h1 original = "Data collections"></h1>
+    <div class="column-container">
+      <div class="column">
+        <h2 original ="Strings"></h2>
+        <p original ="My first program ever was Excel/VBA based cipher crosswords solver, that depended on Excel spellchecker"></p>
+        <p original = "I never liked such dependency, as it produced many 'pseudo words'"></p>
+        <p original = "So, here is an C program, that supports unicode, and can find anagrams from any customly provided dictionary" ></p>
+        <a href="https://github.com/tiisnel/anagram-finder" original = "<view-source>"></a>
+
+      </div>
+      <div class="column">
+        <h2 original = "Web scraping"></h2>
+        <p original = "I have made a few useful tools to find information from the internet fastly"></p>
+        <p original = "But some of those might be in legally gray-area"></p>
+        <p original = "So, here is a tool using chess.com official API, to help finding user chess games from certain position"></p>
+        <a href="https://github.com/tiisnel/chess-game-finder" original = "<view-source>"></a>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="section4">
+    <h1 original ="Presentations"></h1>
+    <div class="column-container">
+      <div class="column">
+        <h2 original = "Web development"></h2>
+        <p original ="I believe, that most applications need to show their output to user - and the best way for that is online"></p>
+        <p original ="Still, I have never actually learnt any website buildings at univercity: That's why I made my internship in a web development company"></p>
+        <p original ="My test assignment:"></p>
+        <a href="https://github.com/tiisnel/web-test" original = "<view-source>"></a>
+        <p original ="During internship, I mostly worked with backend and XML-based API's"></p>
+        <p original ="Still never really looked at front-end, but THIS page somehow works :)"></p>
+
+      </div>
+      <div class="column">
+        <h2 original = "boat model"></h2>
+        <p original ="Another important thing is to understand existing data to repesent it usefully"></p>
+        <p original ="I have studied rowboat movement on water, to implement custom direction choosing and acceleration/stopping model in matlab/simulink"></p>
+        <a href="https://github.com/tiisnel/Boat-movement-modelling" original = "<view-source>"></a>
+        <p original ="Later improved it in Anylogic, to add environment and decision making model, but as there was no way to control/verify online raw data or my model, it quickly became too unreliable to continue"></p>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>   
+    <p>Want to contact me?  Write an email: ttiisler4@gmail.com</p>
+    <p>Or just play a game of chess? :) Challenge @tanler on lichess or chess.com</p>
+    <p>&copy; 2023</p>
+  </footer>
+
+    <script>
+
+    async function changeLanguage(language) {
+		if(language==='en'){
+      table=null;
+      translate(table);
+    }
+    else{
+      try{
+			const response = await fetch(`${language}.json`);
+			const table = await response.json();
+			translate(table);
+
+		} catch (error) {
+			console.log('language not found, return to default(en): ');
+			const table = null;
+			translate(table);
+	}
+}
+document.documentElement.lang = language;
+        }
+		function translate(table){
+
+			const translations = document.querySelectorAll('[original]'); // text content translations
+			translations.forEach(element => {
+        	const key = element.getAttribute('original');
+          const key2 = element.getAttribute('t_original');
+			if (table===null) {
+				element.textContent = key
+			}else{
+				if(!(key in table)){
+					console.log('warning: untranslated element: ' ,key)
+					element.textcontent = key;
+					}
+				else{
+					element.textContent = table[key];
+    }}});
+    
+    const t_translations = document.querySelectorAll('[t_original]'); // title's translations
+			t_translations.forEach(element => {
+        	const key = element.getAttribute('t_original');
+			if (table===null) {
+        element.title=key
+			}else{
+				if(!(key in table)){
+					console.log('warning: untranslated title element: ' ,key)
+          element.title=key;
+					}
+				else{
+          element.title= table[key];
+    }}});
+    
+		
+		}
+changeLanguage('en');
+
+    </script>
+
+</body>
+</html>
+
+
