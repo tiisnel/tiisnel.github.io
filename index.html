@@ -43,7 +43,7 @@
       align-items: center;
       top: 0;
       width: 100%;
-      height: 7vh;
+      height: 4vw;
       background-color: #f2f2f2;
       
     }
@@ -78,10 +78,14 @@
     break-inside: avoid; 
     padding: 10px; 
     }
+    #row p, #row a { /* for multiple styles within 'paragraph' */
+      display: inline-block;
+      font-size: 3vw;
+    }
 
     section {
   margin-top: 9vh;
-  height: 220vh;
+  height: 110vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -121,10 +125,19 @@
     .skill a{
       text-decoration: none;
       color: #666;
-
-
     }
-      body {
+
+    .images {
+      max-width: 100%;
+      height: auto;
+    }
+    .r_image {
+      max-width: 8%;
+      height: auto;
+}
+
+
+    body {
     background-image:
       linear-gradient(45deg, #000 25%, transparent 25%),
       linear-gradient(45deg, transparent 75%, #000 75%),
@@ -175,18 +188,21 @@ footer {
     <br>
     <p original = "Hi!"></p>
     <p original = "My name is Tanel (26)"></p>
-    <p original = "I have a Taltech degree in Cyber-Physical Systems Engineering"></p>
-    <p original = "I am looking for ways to develope as a software engineer.."></p>
-    <p original = "..To work with more meaningful tasks, and learn to write faster and more readable code"></p>
+    <div id ="row">
+      <p original = "I have a Taltech degree in "></p>
+      <a href="https://taltech.ee/sisseastuja/bakalaureuseoppe-erialad/arukad-susteemid-ja-rakendusinfotehnoloogia" target="_blank" original ="Cyber-Physical Systems Engineering"></a>
+    </div>
+    <p original = "During my studies, I really started liking software development"></p>
+    <p original = "So, I am currently looking for ways to further improve my skills in it"></p>
 
 
 
     <h2 original ="Past projects"></h1>
     <div class="column-container">
       <div class="column">
-        <p original ="A common job interview question: describe yourself?"></p>
-          <p original ="So, the purpose of this page, is to describe my strengths and interests for a potential employer"></p>
-          <p original = "For that, here are listed few of my favourite school/hobby projects"></p>
+        <p original ="One of the hardest questions in job interviews is: describe yourself?"></p>
+          <p original ="So, the purpose of this page, is to better describe my strengths and interests for a potential employer"></p>
+          <p original = "For that, here are listed few of my favourite school/hobby projects - click on images to see projects github pages"></p>
           <p original = "*Obivously I am also happy to learn new tools and technologies"></p>
 
       </div>
@@ -215,7 +231,9 @@ footer {
         <p original = "My first program in C: local checkers program with ASCII graphic"></p>
         <p original = "Later, I have made several versions of classical chess in JAVA and Python"></p>
         <p original = "But here, you can download an expandable version of tic-tac-toe, with variable time controls and AI opponents"></p>
-        <a href="https://github.com/tiisnel/tic-tac-toe" original = "<view-source>"></a>
+        <a href="https://github.com/tiisnel/tic-tac-toe">
+          <img class="images" src="mnk.PNG">
+        </a>
 
       </div>
       <div class="column">
@@ -237,7 +255,10 @@ footer {
         <p original ="My first program ever was Excel/VBA based cipher crosswords solver, that depended on Excel spellchecker"></p>
         <p original = "I never liked such dependency, as it produced many 'pseudo words'"></p>
         <p original = "So, here is an C program, that supports unicode, and can find anagrams from any customly provided dictionary" ></p>
-        <a href="https://github.com/tiisnel/anagram-finder" original = "<view-source>"></a>
+        <a href="https://github.com/tiisnel/anagram-finder">
+          <img class="images" src="anagram.PNG">
+
+        </a>
 
       </div>
       <div class="column">
@@ -245,7 +266,10 @@ footer {
         <p original = "I have made a few useful tools to find information from the internet fastly"></p>
         <p original = "But some of those might be in legally gray-area"></p>
         <p original = "So, here is a tool using chess.com official API, to help finding user chess games from certain position"></p>
-        <a href="https://github.com/tiisnel/chess-game-finder" original = "<view-source>"></a>
+        <a href="https://github.com/tiisnel/chess-game-finder">
+          <img class="images" src="find.PNG">
+
+        </a>
 
       </div>
     </div>
@@ -259,23 +283,35 @@ footer {
         <p original ="I believe, that most applications need to show their output to user - and the best way for that is online"></p>
         <p original ="Still, I have never actually learnt any website buildings at univercity: That's why I made my internship in a web development company"></p>
         <p original ="My test assignment:"></p>
-        <a href="https://github.com/tiisnel/web-test" original = "<view-source>"></a>
+        <a href="https://github.com/tiisnel/web-test">
+        <img class="images" src="test.PNG">
+
+        </a>
         <p original ="During internship, I mostly worked with backend and XML-based API's"></p>
         <p original ="Still never really looked at front-end, but THIS page somehow works :)"></p>
+        <a href="https://github.com/tiisnel/tiisnel.github.io">
+          <img class="r_image" src="recurse.png" ;
+          >
+  
+          </a>
+
 
       </div>
       <div class="column">
         <h2 original = "boat model"></h2>
         <p original ="Another important thing is to understand existing data to repesent it usefully"></p>
         <p original ="I have studied rowboat movement on water, to implement custom direction choosing and acceleration/stopping model in matlab/simulink"></p>
-        <a href="https://github.com/tiisnel/Boat-movement-modelling" original = "<view-source>"></a>
+        <a href="https://github.com/tiisnel/Boat-movement-modelling">
+          <img class="images" src="boat.PNG">
+
+        </a>
         <p original ="Later improved it in Anylogic, to add environment and decision making model, but as there was no way to control/verify online raw data or my model, it quickly became too unreliable to continue"></p>
 
       </div>
     </div>
   </section>
 
-  <footer>   
+  <footer>   <!--TODO: translate to estonian ??--> 
     <p>Want to contact me?  Write an email: ttiisler4@gmail.com</p>
     <p>Or just play a game of chess? :) Challenge @tanler on lichess or chess.com</p>
     <p>&copy; 2023</p>
@@ -335,6 +371,8 @@ document.documentElement.lang = language;
     
 		
 		}
+
+
 changeLanguage('en');
 
     </script>
